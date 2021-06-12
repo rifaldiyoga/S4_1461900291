@@ -22,6 +22,8 @@ class PasienController extends Controller
         
         Excel::import(new PasienImport, $request->file('import'));
 
+
+        
         return redirect()->route('index');
 
     }
